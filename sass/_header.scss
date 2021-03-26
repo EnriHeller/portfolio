@@ -1,0 +1,34 @@
+.cabecera{
+    width: 95%;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+.avatar{
+    width: 36%;
+    float: left;
+}
+.avatar img{
+    width: $size1;
+    float: left;
+}
+
+.nombre{
+    width: 40%;
+    float: right;
+}
+
+.nombre img{
+    width: 11rem;
+    margin-top: 2rem;
+    float: right;
+}
+
+@media screen and (min-width: 500px){
+    .avatar{
+        margin-left: 5%;
+    }
+    .nombre{
+        margin-right: 5%;
+    }
+}
+

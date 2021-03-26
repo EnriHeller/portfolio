@@ -1,0 +1,118 @@
+@import "./mixins.scss";
+@import "./variables";
+
+/* General */
+
+.contenido-principal{
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.titulo{
+    font-family: $font-style1;
+    text-shadow: $color1-variant -1px 0px;
+    margin-bottom: 1rem;
+}
+
+.quien-soy, .tecnologias, .contacto{
+    @include container1;
+}
+
+.datos-relevantes, .proyectos{
+    @include container2;
+}
+
+
+/* Sección: Datos relevantes */
+
+.dato{
+    @include container2;
+}
+
+.dato img{
+    width: 20px;
+}
+
+@media screen and (min-width:768px){
+ 
+    .datos-relevantes{
+        overflow: hidden;
+    }
+    .dato{
+        float: left;
+        width: 48%;
+        margin-left: 1%; 
+    }
+}
+
+/* Sección: Tecnologias y proyectos */
+
+.proyecto{
+    @include container2;
+    padding: 0.5rem;
+    font-size: 12px;
+    text-align: center;
+}
+
+.img-proyecto{
+    width: 100%;
+    border-radius: 15px;
+}
+
+@media screen and (min-width:768px){
+
+    .proyectos{
+        overflow: hidden;
+    }
+
+    .proyecto{
+        width: 48%;
+        float: left;
+        margin-left: 1%;
+    }
+}
+.lenguaje{
+    @include contenido-doscolumnas;
+}
+
+.lenguaje img{
+    width: 100px;
+}
+
+/* contacto */
+
+.formulario div, .boton{
+    @include container1;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 768px){
+    .formulario{
+        width: 50%;
+        margin: auto;
+    }
+}
+
+.casillero{
+    display: block;
+}
+.area{
+    @include container1;
+    padding: 5px;
+}
+textarea{
+    max-width: 100%;
+    @include container1;
+    resize: none;
+}
+
+.boton{
+    @include container2;
+    padding: 5px;
+}
+
+
+
